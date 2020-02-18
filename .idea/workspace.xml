@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e282cee1-bfe9-42a3-9794-9633eb4654d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/SimpleWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/SimpleWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConwayGameOfLife">
+  <component name="RunManager" selected="JUnit.ConwayGameOfLifeTest.runTest2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -230,9 +229,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConwayGameOfLife" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
+        <item itemvalue="Application.ConwayGameOfLife" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest" />
       </list>
@@ -250,7 +249,7 @@
       <updated>1519668901598</updated>
       <workItem from="1519668902904" duration="14517000" />
       <workItem from="1582040908908" duration="1102000" />
-      <workItem from="1582042787909" duration="16135000" />
+      <workItem from="1582042787909" duration="16306000" />
     </task>
     <servers />
   </component>
@@ -258,26 +257,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="839" height="187" key="GridCell.Tab.0.bottom" timestamp="1582064536554">
+    <state width="839" height="187" key="GridCell.Tab.0.bottom" timestamp="1582066190419">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
-    <state width="839" height="187" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1582064536554" />
-    <state width="839" height="187" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1582064252853" />
-    <state width="839" height="187" key="GridCell.Tab.0.center" timestamp="1582064536553">
+    <state width="839" height="187" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1582066190419" />
+    <state width="839" height="187" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1582066137418" />
+    <state width="839" height="187" key="GridCell.Tab.0.center" timestamp="1582066190418">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
-    <state width="839" height="187" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1582064536553" />
-    <state width="839" height="187" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1582064252853" />
-    <state width="839" height="187" key="GridCell.Tab.0.left" timestamp="1582064536552">
+    <state width="839" height="187" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1582066190418" />
+    <state width="839" height="187" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1582066137418" />
+    <state width="839" height="187" key="GridCell.Tab.0.left" timestamp="1582066190418">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
-    <state width="839" height="187" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1582064536552" />
-    <state width="839" height="187" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1582064252852" />
-    <state width="839" height="187" key="GridCell.Tab.0.right" timestamp="1582064536553">
+    <state width="839" height="187" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1582066190418" />
+    <state width="839" height="187" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1582066137417" />
+    <state width="839" height="187" key="GridCell.Tab.0.right" timestamp="1582066190419">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
-    <state width="839" height="187" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1582064536553" />
-    <state width="839" height="187" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1582064252853" />
+    <state width="839" height="187" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1582066190419" />
+    <state width="839" height="187" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1582066137418" />
     <state width="839" height="17" key="GridCell.Tab.1.bottom" timestamp="1582064114775">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
