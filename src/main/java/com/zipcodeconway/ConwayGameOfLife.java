@@ -1,5 +1,7 @@
 package com.zipcodeconway;
 
+import java.util.Arrays;
+
 public class ConwayGameOfLife {
     public int worldSize;
     public int[][] world;
@@ -15,11 +17,21 @@ public class ConwayGameOfLife {
     }
 
     public static void main(String[] args) {
-        int size = 5;
+        int size = 10;
         ConwayGameOfLife sim = new ConwayGameOfLife(size);
         sim.worldSize = size;
-        sim.world = sim.createRandomStart(size);
-        int[][] endingWorld = sim.simulate(10);
+        sim.world = new int[][]{
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+                {0, 1, 1, 1, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+        int[][] endingWorld = sim.simulate(100);
 
     }
 
@@ -39,7 +51,10 @@ public class ConwayGameOfLife {
     }
 
     public int[][] simulate(Integer maxGenerations) {
-
+        int[][] cur = new int[worldSize][];
+        for(int i=0; i<worldSize; i++){
+            cur[i] = world[i].clone();
+        }
         for(int c=0; c<maxGenerations; c++){
             for(int i=0; i<worldSize; i++){
                 for(int j=0; j<worldSize ; j++){
@@ -48,9 +63,13 @@ public class ConwayGameOfLife {
                 }
                 System.out.print("\n");
             }
+
             System.out.println("-------");
-            sw.display(world,c+1);
+            copyAndZeroOut(world,cur);
+            sw.display(cur,c+1);
             sw.sleep(40);
+
+
         }
         return world;
     }
@@ -77,7 +96,7 @@ public class ConwayGameOfLife {
 		Any dead cell with exactly three live neighbours cells will come to life.
 	*/
     private int isAlive(int row, int col, int[][] world) {
-        String[] dir= {"UP", "UPRIGHT", "RIGHT", "DOWNRIGHT", "DOWN", "DOWNLEFT", "LEFT", "LEFTUP"};
+        String[] dir= {"UP", "UPRIGHT", "RIGHT", "DOWNRIGHT", "DOWN", "DOWNLEFT", "LEFT", "UPLEFT"};
         int[] check = goodNeighbors(row,col, world[0].length);
         int thisOne = world[row][col];
         int sum = 0;
@@ -89,7 +108,7 @@ public class ConwayGameOfLife {
                 return 0;
             else if (sum > 3)
                 return 0;
-            else if (sum == 2 || sum == 3)
+            else
                 return 1;
         }else{
             if(sum == 3){
