@@ -37,14 +37,14 @@ public class SimpleWindow {
         int BOX_DIM = 10;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
-                g.drawRect(i * BOX_DIM, j * BOX_DIM, 10, 10);
+                g.drawRect(i * BOX_DIM, i * BOX_DIM, 10, 10);
                 if (array[i][j] == 0) {
-                    g.setColor(Color.WHITE);
-                    g.fillRect(i * BOX_DIM, j * BOX_DIM, 10, 10);
+                    g.setColor(Color.ORANGE);
+                    g.fillRect(i * BOX_DIM, i * BOX_DIM, 10, 10);
                 }
                 if (array[i][j] == 1) {
-                    g.setColor(Color.BLACK);
-                    g.fillRect(i * BOX_DIM, j * BOX_DIM, 10, 10);
+                    g.setColor(Color.DARK_GRAY);
+                    g.fillRect(i * BOX_DIM, i * BOX_DIM, 10, 10);
                 }
             }
         }
