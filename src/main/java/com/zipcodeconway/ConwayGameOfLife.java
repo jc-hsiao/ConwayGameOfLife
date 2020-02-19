@@ -52,22 +52,26 @@ public class ConwayGameOfLife {
 
     public int[][] simulate(Integer maxGenerations) {
         int[][] cur = new int[worldSize][];
-        for(int i=0; i<worldSize; i++){
+        for(int i = 0; i < worldSize; i++)
             cur[i] = world[i].clone();
-        }
-        for(int c=0; c<maxGenerations; c++){
+
+        for(int c=1; c<maxGenerations; c++){
             for(int i=0; i<worldSize; i++){
                 for(int j=0; j<worldSize ; j++){
-                    world[i][j] = isAlive(i,j,world);
-                    System.out.print(world[i][j]+" ");
+                    cur[i][j] = isAlive(i,j,world);
                 }
-                System.out.print("\n");
             }
 
-            System.out.println("-------");
-            copyAndZeroOut(world,cur);
             sw.display(cur,c+1);
-            sw.sleep(40);
+            sw.sleep(20);
+            for(int i=0; i<worldSize; i++){
+                world[i] = cur[i].clone();
+                //for(int j=0; j<worldSize ; j++){
+                    //System.out.print(world[i][j]+" ");
+                //}
+                //System.out.print("\n");
+            }
+            //System.out.println("-------");
 
 
         }
@@ -96,78 +100,41 @@ public class ConwayGameOfLife {
 		Any dead cell with exactly three live neighbours cells will come to life.
 	*/
     private int isAlive(int row, int col, int[][] world) {
-        String[] dir= {"UP", "UPRIGHT", "RIGHT", "DOWNRIGHT", "DOWN", "DOWNLEFT", "LEFT", "UPLEFT"};
-        int[] check = goodNeighbors(row,col, world[0].length);
-        int thisOne = world[row][col];
-        int sum = 0;
-        for(int i=0; i<check.length; i++){
-            sum += get(dir[check[i]],row,col,world);
-        }
-        if(thisOne == 1) {
-            if (sum < 2)
-                return 0;
-            else if (sum > 3)
-                return 0;
+
+        int numOfLiveNeighbor = getNeighbor(row,col,world);
+
+        if(world[row][col] == 0) {
+            if (numOfLiveNeighbor == 3)
+                return 1;
             else
+                return 0;
+        }
+
+        else if(world[row][col] == 1) {
+            if (numOfLiveNeighbor == 2 || numOfLiveNeighbor == 3)
                 return 1;
-        }else{
-            if(sum == 3){
-                return 1;
+            else
+                return 0;
+        }
+        return  -1;
+
+    }
+
+    public int getNeighbor(int row, int col, int[][] world) {
+        int sum = 0;
+        //calculates number of alive neighbor
+        for (int i = row-1; i <= row+1; i++) {
+            for(int j = col-1; j <= col+1; j++) {
+                if (    !(i == row && j == col) &&
+                        (i >= 0 && i < world[0].length) &&
+                        (j >= 0 && j < world[0].length)) {
+                    if(world[i][j] == 1)
+                        sum++;
+                }
             }
         }
-        return 0;
+        return sum;
     }
-
-    public int[] goodNeighbors(int row, int col, int dim){
-        //String[] dir= {
-        // "UP",
-        // "UPRIGHT", "RIGHT",
-        // "DOWNRIGHT", "DOWN",
-        // "DOWNLEFT", "LEFT",
-        // "LEFTUP"};
-
-        if(row==0 && col ==0){
-            return new int[] {2,3,4};
-        }else if (row==dim-1 && col ==0){
-            return new int[] {0,1,2};
-        }else if (col==dim-1 && row == 0){
-            return new int[] {4,5,6};
-        }else if (col==dim-1 && row == dim-1){
-            return new int[] {6,7,0};
-        }else if(row == 0){
-            return new int[] {2,3,4,5,6};
-        }else if(col== dim-1){
-            return new int[] {4,5,6,7,0};
-        }else if(col == 0){
-            return new int[] {0,1,2,3,4};
-        }else if(row == dim-1){
-            return new int[] {0,1,2,6,7};
-        }else{
-            return new int[] {0,1,2,3,4,5,6,7};
-        }
-    }
-
-
-    public int get(String s, int row, int col, int[][] mat){
-        if(s.equals("UP"))
-            return mat[row-1][col];
-        else if(s.equals("DOWN"))
-            return mat[row+1][col];
-        else if(s.equals("RIGHT"))
-            return mat[row][col+1];
-        else if(s.equals("LEFT"))
-            return mat[row][col-1];
-        else if(s.equals("UPLEFT"))
-            return mat[row-1][col-1];
-        else if(s.equals("UPRIGHT"))
-            return mat[row-1][col+1];
-        else if(s.equals("DOWNLEFT"))
-            return mat[row+1][col-1];
-        else if(s.equals("DOWNRIGHT"))
-            return mat[row+1][col+1];
-        return 0;
-    }
-
 }
 
 
