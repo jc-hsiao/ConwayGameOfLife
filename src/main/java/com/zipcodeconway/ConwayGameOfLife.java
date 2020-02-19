@@ -3,9 +3,10 @@ package com.zipcodeconway;
 import java.util.Arrays;
 
 public class ConwayGameOfLife {
-    public int worldSize;
-    public int[][] world;
-    public SimpleWindow sw;
+    private int worldSize;
+    private int[][] world;
+    private SimpleWindow sw;
+    private int sleepTime = 50;
 
     public ConwayGameOfLife(Integer dimension) {
         sw = new SimpleWindow(dimension);
@@ -17,20 +18,9 @@ public class ConwayGameOfLife {
     }
 
     public static void main(String[] args) {
-        int size = 10;
+        int size = 50;
         ConwayGameOfLife sim = new ConwayGameOfLife(size);
-        sim.worldSize = size;
-        sim.world = new int[][]{
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
-                {0, 1, 1, 1, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+        sim.world = sim.createRandomStart(size);
         int[][] endingWorld = sim.simulate(100);
 
     }
@@ -38,7 +28,7 @@ public class ConwayGameOfLife {
     // Contains the logic for the starting scenario.
     // Which cells are alive or dead in generation 0.
     // allocates and returns the starting matrix of size 'dimension'
-    private int[][] createRandomStart(Integer dimension) {
+    public int[][] createRandomStart(Integer dimension) {
         int[][] m = new int[dimension][dimension];
         for(int i=0; i<dimension ; i++){
             for(int j=0; j<dimension ; j++){
@@ -51,29 +41,25 @@ public class ConwayGameOfLife {
     }
 
     public int[][] simulate(Integer maxGenerations) {
+        //get a copy of initial state, gen1
+        this.worldSize = world[0].length;
         int[][] cur = new int[worldSize][];
         for(int i = 0; i < worldSize; i++)
             cur[i] = world[i].clone();
 
+        //starts generation change
         for(int c=1; c<maxGenerations; c++){
             for(int i=0; i<worldSize; i++){
                 for(int j=0; j<worldSize ; j++){
                     cur[i][j] = isAlive(i,j,world);
                 }
             }
-
             sw.display(cur,c+1);
-            sw.sleep(20);
+            sw.sleep(sleepTime);
             for(int i=0; i<worldSize; i++){
                 world[i] = cur[i].clone();
-                //for(int j=0; j<worldSize ; j++){
-                    //System.out.print(world[i][j]+" ");
-                //}
-                //System.out.print("\n");
             }
-            //System.out.println("-------");
-
-
+            
         }
         return world;
     }
@@ -85,9 +71,7 @@ public class ConwayGameOfLife {
             for(int j=0; j<next[0].length ; j++){
                 current[i][j] = next[i][j];
                 next[i][j]=0;
-                //System.out.print(m[i][j]+" ");
             }
-            //System.out.print("\n");
         }
     }
 
@@ -134,6 +118,13 @@ public class ConwayGameOfLife {
             }
         }
         return sum;
+    }
+
+    public void setWorld(int[][] newWorld){
+        world = newWorld;
+    }
+    public void setSleepTime(int ms){
+        sleepTime = ms;
     }
 }
 

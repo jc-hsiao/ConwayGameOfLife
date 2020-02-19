@@ -4,6 +4,7 @@
     <list default="true" id="e282cee1-bfe9-42a3-9794-9633eb4654d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodeconway/ConwayGameOfLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodeconway/ConwayGameOfLifeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,23 +69,9 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConwayGameOfLifeTest.runTest2">
+  <component name="RunManager" selected="JUnit.ConwayGameOfLifeTest.animationTest_rand">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConwayGameOfLife" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLife" />
-      <module name="Game-Of-Life-Java" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zipcodeconway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayGameOfLifeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConwayGameOfLifeTest.animationTest_10cellrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Game-Of-Life-Java" />
       <extension name="coverage">
         <pattern>
@@ -105,30 +92,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodeconway" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConwayGameOfLifeTest.runTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Game-Of-Life-Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zipcodeconway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="METHOD_NAME" value="runTest" />
+      <option name="METHOD_NAME" value="animationTest_10cellrow" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayGameOfLifeTest.runTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConwayGameOfLifeTest.animationTest_clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Game-Of-Life-Java" />
       <extension name="coverage">
         <pattern>
@@ -138,14 +109,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodeconway" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="METHOD_NAME" value="runTest1" />
+      <option name="METHOD_NAME" value="animationTest_clear" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayGameOfLifeTest.runTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConwayGameOfLifeTest.animationTest_expload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Game-Of-Life-Java" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +126,41 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodeconway" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="METHOD_NAME" value="runTest2" />
+      <option name="METHOD_NAME" value="animationTest_expload" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayGameOfLifeTest.animationTest_rand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game-Of-Life-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodeconway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
+      <option name="METHOD_NAME" value="animationTest_rand" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayGameOfLifeTest.animationTest_smallExpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game-Of-Life-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodeconway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
+      <option name="METHOD_NAME" value="animationTest_smallExpload" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -211,20 +216,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConwayGameOfLife" />
-      <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest" />
-      <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
-      <item itemvalue="JUnit.ConwayGameOfLifeTest" />
       <item itemvalue="Maven.ConwayLife" />
-      <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
+      <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_expload" />
+      <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_clear" />
+      <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_smallExpload" />
+      <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_10cellrow" />
+      <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_rand" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
-        <item itemvalue="Application.ConwayGameOfLife" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_rand" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_10cellrow" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_smallExpload" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_clear" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.animationTest_expload" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +245,7 @@
       <updated>1519668901598</updated>
       <workItem from="1519668902904" duration="14517000" />
       <workItem from="1582040908908" duration="1102000" />
-      <workItem from="1582042787909" duration="20967000" />
+      <workItem from="1582042787909" duration="25804000" />
     </task>
     <servers />
   </component>
@@ -248,65 +253,63 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1034" height="127" key="GridCell.Tab.0.bottom" timestamp="1582121099338">
+    <state width="1034" height="127" key="GridCell.Tab.0.bottom" timestamp="1582126161906">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="187" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582069042848" />
-    <state width="1034" height="127" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1582121099338" />
-    <state width="1034" height="187" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1582121052688" />
-    <state width="1034" height="127" key="GridCell.Tab.0.center" timestamp="1582121099337">
+    <state width="1034" height="127" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1582126161906" />
+    <state width="1034" height="127" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1582125157771" />
+    <state width="1034" height="127" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1582121558493" />
+    <state width="1034" height="127" key="GridCell.Tab.0.center" timestamp="1582126161905">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="187" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582069042847" />
-    <state width="1034" height="127" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1582121099337" />
-    <state width="1034" height="187" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1582121052687" />
-    <state width="1034" height="127" key="GridCell.Tab.0.left" timestamp="1582121099337">
+    <state width="1034" height="127" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1582126161905" />
+    <state width="1034" height="127" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1582125157770" />
+    <state width="1034" height="127" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1582121558492" />
+    <state width="1034" height="127" key="GridCell.Tab.0.left" timestamp="1582126161905">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="187" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582069042847" />
-    <state width="1034" height="127" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1582121099337" />
-    <state width="1034" height="187" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1582121052687" />
-    <state width="1034" height="127" key="GridCell.Tab.0.right" timestamp="1582121099337">
+    <state width="1034" height="127" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1582126161905" />
+    <state width="1034" height="167" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.724" timestamp="1582122602363" />
+    <state width="1034" height="127" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1582125157769" />
+    <state width="1034" height="127" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1582121558491" />
+    <state width="1034" height="127" key="GridCell.Tab.0.right" timestamp="1582126161905">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="187" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582069042848" />
-    <state width="1034" height="127" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1582121099337" />
-    <state width="1034" height="187" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1582121052688" />
-    <state width="1034" height="89" key="GridCell.Tab.1.bottom" timestamp="1582066466006">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1034" height="127" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1582126161905" />
+    <state width="1034" height="127" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1582125157770" />
+    <state width="1034" height="127" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1582121558492" />
+    <state width="1034" height="237" key="GridCell.Tab.1.bottom" timestamp="1582124397684">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1034" height="89" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1582066466006" />
-    <state width="839" height="17" key="GridCell.Tab.1.bottom/0.23.1280.726@0.23.1280.726" timestamp="1582066228733" />
-    <state width="1034" height="89" key="GridCell.Tab.1.center" timestamp="1582066466006">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1034" height="237" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1582124376985" />
+    <state width="1034" height="237" key="GridCell.Tab.1.bottom/0.23.1280.726@0.23.1280.726" timestamp="1582124397684" />
+    <state width="1034" height="88" key="GridCell.Tab.1.bottom/0.23.1280.727@0.23.1280.727" timestamp="1582121429949" />
+    <state width="1034" height="237" key="GridCell.Tab.1.center" timestamp="1582124397683">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1034" height="89" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1582066466006" />
-    <state width="839" height="17" key="GridCell.Tab.1.center/0.23.1280.726@0.23.1280.726" timestamp="1582066228732" />
-    <state width="1034" height="89" key="GridCell.Tab.1.left" timestamp="1582066466005">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1034" height="237" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1582124376984" />
+    <state width="1034" height="237" key="GridCell.Tab.1.center/0.23.1280.726@0.23.1280.726" timestamp="1582124397683" />
+    <state width="1034" height="88" key="GridCell.Tab.1.center/0.23.1280.727@0.23.1280.727" timestamp="1582121429948" />
+    <state width="1034" height="237" key="GridCell.Tab.1.left" timestamp="1582124397682">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1034" height="89" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1582066466005" />
-    <state width="839" height="17" key="GridCell.Tab.1.left/0.23.1280.726@0.23.1280.726" timestamp="1582066228731" />
-    <state width="1034" height="89" key="GridCell.Tab.1.right" timestamp="1582066466006">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1034" height="237" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1582124376984" />
+    <state width="1034" height="237" key="GridCell.Tab.1.left/0.23.1280.726@0.23.1280.726" timestamp="1582124397682" />
+    <state width="1034" height="88" key="GridCell.Tab.1.left/0.23.1280.727@0.23.1280.727" timestamp="1582121429947" />
+    <state width="1034" height="237" key="GridCell.Tab.1.right" timestamp="1582124397683">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1034" height="89" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1582066466006" />
-    <state width="839" height="17" key="GridCell.Tab.1.right/0.23.1280.726@0.23.1280.726" timestamp="1582066228732" />
+    <state width="1034" height="237" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1582124376985" />
+    <state width="1034" height="237" key="GridCell.Tab.1.right/0.23.1280.726@0.23.1280.726" timestamp="1582124397683" />
+    <state width="1034" height="88" key="GridCell.Tab.1.right/0.23.1280.727@0.23.1280.727" timestamp="1582121429948" />
     <state x="504" y="73" width="670" height="676" key="search.everywhere.popup" timestamp="1582062319082">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="504" y="73" width="670" height="676" key="search.everywhere.popup/0.23.1280.726@0.23.1280.726" timestamp="1582062319082" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zipcodeconway/ConwayGameOfLifeTest.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
